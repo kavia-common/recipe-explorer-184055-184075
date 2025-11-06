@@ -1,0 +1,40 @@
+<resources>
+    <style name="Theme.RecipeApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="android:statusBarColor">@color/primaryColor</item>
+        <item name="android:navigationBarColor">@color/surfaceColor</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="materialCardViewStyle">@style/RecipeCard</item>
+        <item name="chipStyle">@style/FilterChip</item>
+        <item name="bottomNavigationStyle">@style/BottomNav</item>
+        <item name="toolbarStyle">@style/RecipeToolbar</item>
+    </style>
+
+    <style name="RecipeCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardBackgroundColor">@color/surfaceColor</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="FilterChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/backgroundColor</item>
+        <item name="chipStrokeColor">@color/primaryColor</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipIconTint">@color/primaryColor</item>
+        <item name="rippleColor">@color/primaryColor</item>
+    </style>
+
+    <style name="BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/primaryColor</item>
+        <item name="itemTextColor">@color/primaryColor</item>
+    </style>
+
+    <style name="RecipeToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="backgroundTint">@color/surfaceColor</item>
+        <item name="titleTextColor">@color/textColor</item>
+        <item name="navigationIconTint">@color/primaryColor</item>
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <EditText
+        android:id="@+id/search_input"
+        android:hint="@string/search_hint"
+        android:background="@drawable/bg_card"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="#8A8A8A"/>
+
+    <org.example.app.ui.common.StateView
+        android:id="@+id/state_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </org.example.app.ui.common.StateView>
+
+</LinearLayout>

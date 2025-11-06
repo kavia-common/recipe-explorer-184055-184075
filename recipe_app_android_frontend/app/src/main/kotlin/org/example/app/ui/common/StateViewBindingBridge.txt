@@ -1,0 +1,1 @@
+Note: StateView uses view_state.xml via manual inflation inside its class.
